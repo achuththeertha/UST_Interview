@@ -1,0 +1,25 @@
+def swap_numbers(a, b):
+    """Swaps the values of two variables.
+
+    Args:
+        a: The first variable.
+        b: The second variable.
+    """
+
+    temp = a
+    a = b
+    b = temp
+
+# Positive unit tests
+a = 1
+b = 2
+swap_numbers(a, b)
+assert a == 2
+assert b == 1
+
+# Negative unit tests
+a = "hello"
+b = "world"
+swap_numbers(a, b)
+assert a != "world"
+assert b != "hello"
